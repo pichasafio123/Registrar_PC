@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Equipo</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Editar Equipo</h2>
+
+    <form method="POST">
+        <label>Serial:</label>
+        <input type="text" name="serial" value="{{ pc[1] }}" required>
+
+        <label>Marca:</label>
+        <input type="text" name="marca" value="{{ pc[2] }}">
+
+        <label>Modelo:</label>
+        <input type="text" name="modelo" value="{{ pc[3] }}">
+
+        <label>Procesador:</label>
+        <input type="text" name="procesador" value="{{ pc[4] }}">
+
+        <label>RAM:</label>
+        <input type="text" name="ram" value="{{ pc[5] }}">
+
+        <label>Almacenamiento:</label>
+        <input type="text" name="almacenamiento" value="{{ pc[6] }}">
+
+        <button class="btn-warning" type="submit">Actualizar</button>
+    </form>
+
+    <a class="btn" href="/">Cancelar</a>
+
+</div>
+
+</body>
+</html>

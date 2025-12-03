@@ -1,0 +1,138 @@
+/* ---- ESTILOS GENERALES ---- */
+body {
+    font-family: Arial, sans-serif;
+    background: #e8f5e9; /* Verde suave */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* ---- CONTENEDOR ---- */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+
+/* ---- TITULOS ---- */
+h1, h2 {
+    color: #1b5e20; /* Verde oscuro */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ---- TABLAS ---- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #2e7d32; /* Verde fuerte */
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #c8e6c9; /* Verde muy claro */
+}
+
+tr:hover {
+    background: #f1f8e9; /* Verde súper suave */
+}
+
+/* ---- BOTONES ---- */
+.btn {
+    display: inline-block;
+    background: #43a047; /* Verde medio */
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2e7d32; /* Más oscuro al pasar */
+}
+
+.btn-warning {
+    display: inline-block;
+    background: #aee571; /* Verde limón claro */
+    color: #2e7d32;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.btn-warning:hover {
+    background: #8cd65e;
+}
+
+.btn-danger {
+    display: inline-block;
+    background: #d84315; /* Naranja rojizo (para mantener contraste) */
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.btn-danger:hover {
+    background: #bf360c;
+}
+
+/* ---- FORMULARIOS ---- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 80%;
+    margin: auto;
+}
+
+input, select {
+    padding: 10px;
+    border: 2px solid #a5d6a7; /* Verde suave */
+    border-radius: 6px;
+}
+
+input:focus {
+    border-color: #2e7d32; /* Verde fuerte */
+    outline: none;
+}
+
+/* ---- TARJETAS (DETALLE) ---- */
+.card {
+    width: 80%;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.card.big {
+    width: 60%;
+}
+
+/* ---- TEXTO ---- */
+p {
+    font-size: 16px;
+    color: #2e2e2e;
+    text-align: left;
+}
+
+.error {
+    color: #c62828; /* Rojo suave */
+    font-weight: bold;
+}

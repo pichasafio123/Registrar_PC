@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventario Público</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Inventario Público</h1>
+    <p>Puedes ver información general de los equipos.</p>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Serial</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Acción</th>
+        </tr>
+
+        {% for pc in pcs %}
+        <tr>
+            <td>{{ pc[0] }}</td>
+            <td>{{ pc[1] }}</td>
+            <td>{{ pc[2] }}</td>
+            <td>{{ pc[3] }}</td>
+            <td><a class="btn" href="/detalle/{{ pc[0] }}">Ver</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a class="btn" href="/logout">Salir</a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="container small">
+
+    <h2>Iniciar Sesión</h2>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+        <label>Usuario:</label>
+        <input type="text" name="usuario" required>
+
+        <label>Contraseña (solo admin):</label>
+        <input type="password" name="password">
+
+        <button class="btn" type="submit">Entrar</button>
+    </form>
+
+</div>
+
+</body>
+</html>

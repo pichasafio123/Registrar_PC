@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventario - Administrador</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Inventario de Equipos (Admin)</h1>
+
+    <a class="btn" href="/registrar">Registrar nuevo PC</a>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Serial</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Acciones</th>
+        </tr>
+
+        {% for pc in pcs %}
+        <tr>
+            <td>{{ pc[0] }}</td>
+            <td>{{ pc[1] }}</td>
+            <td>{{ pc[2] }}</td>
+            <td>{{ pc[3] }}</td>
+            <td>
+                <a class="btn" href="/detalle/{{ pc[0] }}">Ver</a>
+                <a class="btn-warning" href="/editar/{{ pc[0] }}">Editar</a>
+                <a class="btn-danger" href="/eliminar/{{ pc[0] }}">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a class="btn" href="/logout">Cerrar sesión</a>
+
+</div>
+
+</body>
+</html>

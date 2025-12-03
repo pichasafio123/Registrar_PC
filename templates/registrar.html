@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Equipo</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Registrar Nuevo Equipo</h2>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+        <label>Serial:</label>
+        <input type="text" name="serial" required>
+
+        <label>Marca:</label>
+        <input type="text" name="marca">
+
+        <label>Modelo:</label>
+        <input type="text" name="modelo">
+
+        <label>Procesador:</label>
+        <input type="text" name="procesador">
+
+        <label>RAM:</label>
+        <input type="text" name="ram">
+
+        <label>Almacenamiento:</label>
+        <input type="text" name="almacenamiento">
+
+        <button class="btn" type="submit">Registrar</button>
+    </form>
+
+    <a class="btn" href="/">Volver</a>
+
+</div>
+
+</body>
+</html>
